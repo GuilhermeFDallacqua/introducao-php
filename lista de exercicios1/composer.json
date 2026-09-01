@@ -1,0 +1,12 @@
+{
+    "name": "aula/listadeexercicios1",
+    "description": "lista de exercicios 1",
+    "require": {
+        "php": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
