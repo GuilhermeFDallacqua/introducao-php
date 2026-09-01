@@ -115,7 +115,4 @@
 
     echo resultadoAluno($nome, $num1, $num2, $num3);
 
-    #exercicio 10
-
-    
 ?>

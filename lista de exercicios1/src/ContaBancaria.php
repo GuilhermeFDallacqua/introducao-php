@@ -21,21 +21,21 @@ class ContaBancaria
 
     public function depositar(float $valor): void
     {
-        if ($valor < 0) {
-            throw new InvalidArgumentException("Saldo inválido, deve ser maior ou igual a 0.");
+        if ($valor <= 0) {
+            throw new InvalidArgumentException("Valor de depósito inválido, deve ser maior que 0.");
         }
 
-        $this->saldo = $valor;
+        $this->saldo += $valor;
     }
 
     public function sacar(float $valor): void
     {
-        if ($valor < 0) {
-            throw new InvalidArgumentException("Saldo inválido, deve ser maior ou igual a 0.");
+        if ($valor <= 0) {
+            throw new InvalidArgumentException("Valor de saque inválido, deve ser maior que 0.");
         }
 
         if ($valor > $this->saldo) {
-            throw new InvalidArgumentException("Saldo inválido, deve ser menor ou igual seu saldo atual.");
+            throw new InvalidArgumentException("Valor de saque inválido, deve ser menor ou igual seu saldo atual.");
         }
 
         $this->saldo -= $valor;
