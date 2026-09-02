@@ -118,4 +118,45 @@ $personagem1->curar(1000);
 $personagem1->sofrerDano(60);
 $personagem1->executarAtaque(10, 10);
 
+#Exercicio 7
+
+use App\PetVirtual;
+
+$pet1 = new PetVirtual("Diana", 0, 100, 100);
+
+echo "-----------------------" . PHP_EOL;
+$pet1->brincar();
+echo $pet1->status() . PHP_EOL;
+echo "-----------------------" . PHP_EOL;
+
+$pet1->dormir();
+echo $pet1->status() . PHP_EOL;
+echo "-----------------------" . PHP_EOL;
+
+$pet1->brincar();
+echo $pet1->status() . PHP_EOL;
+echo "-----------------------" . PHP_EOL;
+
+$pet1->brincar();
+echo $pet1->status() . PHP_EOL;
+echo "-----------------------" . PHP_EOL;
+
+$pet1->alimentar();
+echo $pet1->status() . PHP_EOL;
+echo "-----------------------" . PHP_EOL;
+
+$pet1->alimentar();
+echo $pet1->status() . PHP_EOL;
+echo "-----------------------" . PHP_EOL;
+
+$pet1->brincar();
+$pet1->brincar();
+$pet1->brincar();
+$pet1->brincar();
+echo $pet1->status() . PHP_EOL;
+
+#Exercicio 8
+
+
+
 ?>
