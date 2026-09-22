@@ -38,7 +38,12 @@ class CronometroTreino
 
     public function formatarTempo(): string
     {
-        return round($this->totalMinutos() / 60) . ":" . round($this->totalMinutos()) . ":" . $this->segundosAcumulados;
+        $total = $this->segundosAcumulados;
+        $horas = floor($total / 3600);
+        $minutos = floor(($total % 3600) / 60);
+        $segundos = floor($total % 60);
+
+        return $horas . ":" . $minutos . ":" . $segundos;
     }
 }
 
