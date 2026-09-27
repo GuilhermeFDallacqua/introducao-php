@@ -1,5 +1,7 @@
 <?php
 
+//Nome: Guilherme Ferraresi Dallacqua; RA: 2199285; Turma: BCC-C
+
 require_once '../vendor/autoload.php';
 
 use App\Temperatura;

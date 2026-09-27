@@ -18,7 +18,7 @@ class CronometroTreino
     public function adicionarTempo(int $tempo): bool
     {
         if ($tempo <= 0) {
-            echo "Tempo inválido, deve ser maior que 0.";
+            echo "Tempo inválido, deve ser maior que 0." . PHP_EOL;
             return false;
         }
 
